@@ -23,7 +23,7 @@ const result = document.querySelector(".result");
 function displayWinner(user, computer, winner) {
   console.log(winner);
   // add results to DOM
-  computerChoice.textContent = `The computer chose ${computer}!`
+  computerChoice.textContent = `You chose ${user} \nThe computer chose ${computer}!`
   result.textContent = winner;
 }
 
