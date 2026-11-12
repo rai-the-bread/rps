@@ -18,12 +18,14 @@ userScissors.addEventListener("click", () => findWinner("scissors"));
 
 // save computer choice and result paragraph
 const computerChoice = document.querySelector(".cp-choice")
+const userChoice = document.querySelector(".user-choice")
 const result = document.querySelector(".result");
 
 function displayWinner(user, computer, winner) {
   console.log(winner);
   // add results to DOM
-  computerChoice.textContent = `You chose ${user} \nThe computer chose ${computer}!`
+  userChoice.textContent = `You chose ${user}`
+  computerChoice.textContent = `The computer chose ${computer}`
   result.textContent = winner;
 }
 
